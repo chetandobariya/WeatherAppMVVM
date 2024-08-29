@@ -32,9 +32,3 @@ extension Date {
     }
 
 }
-
-func delay(_ seconds: TimeInterval, dispatchQueue: DispatchQueue = .main, completion: @escaping () -> Void) {
-    dispatchQueue.asyncAfter(deadline: .now() + seconds) {
-        completion()
-    }
-}

@@ -26,6 +26,7 @@ class HomeViewModel: ObservableObject {
     func fetchWeather(lat: Double, lon: Double, excluded: String) {
         guard NetworkReachability.shared.isNetworkAvailable() else {
             self.alertMessage = "No Internet Connection"
+            self.isLoading = false
             return
         }
         isLoading = true
@@ -47,10 +48,12 @@ class HomeViewModel: ObservableObject {
     func fetchCity(lat: Double, lon: Double) {
         guard NetworkReachability.shared.isNetworkAvailable() else {
             self.alertMessage = "No Internet Connection"
+            self.isLoading = false
             return
         }
         apiService.fetchCity(lat: lat, lon: lon)
             .sink(receiveCompletion: { completion in
+                self.isLoading = false
                 switch completion {
                 case .failure(let error):
                     self.alertMessage = error.localizedDescription

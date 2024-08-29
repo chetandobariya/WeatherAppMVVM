@@ -38,6 +38,9 @@
 		1197DF1D2C8115FE000ECDA8 /* DailyForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1197DF1C2C8115FE000ECDA8 /* DailyForecastView.swift */; };
 		1197DF1F2C81165C000ECDA8 /* CustomStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1197DF1E2C81165C000ECDA8 /* CustomStackView.swift */; };
 		1197DF212C811680000ECDA8 /* CustomCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1197DF202C811680000ECDA8 /* CustomCorner.swift */; };
+		1197DF232C8117C4000ECDA8 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1197DF222C8117C4000ECDA8 /* HomeViewModelTests.swift */; };
+		1197DF282C811AFD000ECDA8 /* MockAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1197DF272C811AFD000ECDA8 /* MockAPIService.swift */; };
+		1197DF2B2C811B5F000ECDA8 /* DataStubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1197DF242C811A95000ECDA8 /* DataStubs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +95,9 @@
 		1197DF1C2C8115FE000ECDA8 /* DailyForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyForecastView.swift; sourceTree = "<group>"; };
 		1197DF1E2C81165C000ECDA8 /* CustomStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStackView.swift; sourceTree = "<group>"; };
 		1197DF202C811680000ECDA8 /* CustomCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorner.swift; sourceTree = "<group>"; };
+		1197DF222C8117C4000ECDA8 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		1197DF242C811A95000ECDA8 /* DataStubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStubs.swift; sourceTree = "<group>"; };
+		1197DF272C811AFD000ECDA8 /* MockAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +172,8 @@
 		1197DEC32C810181000ECDA8 /* WeatherAppMVVMTests */ = {
 			isa = PBXGroup;
 			children = (
+				1197DF292C811B05000ECDA8 /* TestingHelpers */,
+				1197DF222C8117C4000ECDA8 /* HomeViewModelTests.swift */,
 				1197DEC42C810181000ECDA8 /* WeatherAppMVVMTests.swift */,
 			);
 			path = WeatherAppMVVMTests;
@@ -319,6 +327,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		1197DF292C811B05000ECDA8 /* TestingHelpers */ = {
+			isa = PBXGroup;
+			children = (
+				1197DF242C811A95000ECDA8 /* DataStubs.swift */,
+				1197DF272C811AFD000ECDA8 /* MockAPIService.swift */,
+			);
+			path = TestingHelpers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -451,6 +468,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1197DF1B2C8115EE000ECDA8 /* HourlyForecastView.swift in Sources */,
+				1197DF2B2C811B5F000ECDA8 /* DataStubs.swift in Sources */,
 				1197DF212C811680000ECDA8 /* CustomCorner.swift in Sources */,
 				1197DEEE2C81037E000ECDA8 /* Weather.swift in Sources */,
 				1197DF192C8115DD000ECDA8 /* WeatherDataView.swift in Sources */,
@@ -482,7 +500,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1197DF282C811AFD000ECDA8 /* MockAPIService.swift in Sources */,
 				1197DEC52C810181000ECDA8 /* WeatherAppMVVMTests.swift in Sources */,
+				1197DF232C8117C4000ECDA8 /* HomeViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

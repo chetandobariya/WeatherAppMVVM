@@ -15,7 +15,6 @@ protocol ViewHelperInterface {
     func getStoredLocation() -> LocationData?
 }
 
-
 class ViewHelper: ViewHelperInterface {
     static var shared = { ViewHelper() }()
 
@@ -41,5 +40,10 @@ class ViewHelper: ViewHelperInterface {
         }
         return nil
     }
-    
+}
+
+func delay(_ seconds: TimeInterval, dispatchQueue: DispatchQueue = .main, completion: @escaping () -> Void) {
+    dispatchQueue.asyncAfter(deadline: .now() + seconds) {
+        completion()
+    }
 }
