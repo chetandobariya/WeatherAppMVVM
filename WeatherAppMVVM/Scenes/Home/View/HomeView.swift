@@ -115,6 +115,7 @@ struct HomeView: View {
     }
     
     func getWeatherForecast(for location: String) {
+        // convert entered location name to lattitude and logtitude
         CLGeocoder().geocodeAddressString(location) { (placemarks, error) in
             if error != nil {
                 showWrongCityInputAlert()

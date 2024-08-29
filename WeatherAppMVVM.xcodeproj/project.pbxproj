@@ -61,6 +61,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11077C242C812AB8002C96DE /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1197DEB02C81017E000ECDA8 /* WeatherAppMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherAppMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1197DEB32C81017E000ECDA8 /* WeatherAppMVVMApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAppMVVMApp.swift; sourceTree = "<group>"; };
 		1197DEB72C810180000ECDA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -128,6 +129,7 @@
 		1197DEA72C81017E000ECDA8 = {
 			isa = PBXGroup;
 			children = (
+				11077C242C812AB8002C96DE /* README.md */,
 				1197DEB22C81017E000ECDA8 /* WeatherAppMVVM */,
 				1197DEC32C810181000ECDA8 /* WeatherAppMVVMTests */,
 				1197DECD2C810181000ECDA8 /* WeatherAppMVVMUITests */,

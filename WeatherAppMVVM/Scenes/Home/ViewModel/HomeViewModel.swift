@@ -31,6 +31,7 @@ class HomeViewModel: ObservableObject {
         }
         isLoading = true
         apiService.fetchWeather(lat: lat, lon: lon, excluded: excluded)
+            .receive(on: DispatchQueue.main) // Ensure this is on the main thread
             .sink(receiveCompletion: { completion in
                 self.isLoading = false
                 switch completion {
@@ -52,6 +53,7 @@ class HomeViewModel: ObservableObject {
             return
         }
         apiService.fetchCity(lat: lat, lon: lon)
+            .receive(on: DispatchQueue.main) // Ensure this is on the main thread
             .sink(receiveCompletion: { completion in
                 self.isLoading = false
                 switch completion {
