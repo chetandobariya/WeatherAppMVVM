@@ -10,10 +10,12 @@ import Combine
 
 class HomeViewModel: ObservableObject {
     @Published var forecast: Forecast?
-    @Published var errorMessage: String = ""
+    @Published var alertMessage: String = ""
+    @Published var isAlertVisible = false
+    @Published var alertTitle = ""
     @Published var cityName = ""
     @Published var isLoading: Bool = false
-
+    
     private var cancellables = Set<AnyCancellable>()
     private let apiService: APIServiceProtocol
     
@@ -22,13 +24,17 @@ class HomeViewModel: ObservableObject {
     }
     
     func fetchWeather(lat: Double, lon: Double, excluded: String) {
+        guard NetworkReachability.shared.isNetworkAvailable() else {
+            self.alertMessage = "No Internet Connection"
+            return
+        }
         isLoading = true
         apiService.fetchWeather(lat: lat, lon: lon, excluded: excluded)
             .sink(receiveCompletion: { completion in
                 self.isLoading = false
                 switch completion {
                 case .failure(let error):
-                    self.errorMessage = error.localizedDescription
+                    self.alertMessage = error.localizedDescription
                 case .finished:
                     break
                 }
@@ -39,11 +45,15 @@ class HomeViewModel: ObservableObject {
     }
     
     func fetchCity(lat: Double, lon: Double) {
+        guard NetworkReachability.shared.isNetworkAvailable() else {
+            self.alertMessage = "No Internet Connection"
+            return
+        }
         apiService.fetchCity(lat: lat, lon: lon)
             .sink(receiveCompletion: { completion in
                 switch completion {
                 case .failure(let error):
-                    self.errorMessage = error.localizedDescription
+                    self.alertMessage = error.localizedDescription
                 case .finished:
                     break
                 }
@@ -52,5 +62,5 @@ class HomeViewModel: ObservableObject {
             })
             .store(in: &cancellables)
     }
-
+    
 }
