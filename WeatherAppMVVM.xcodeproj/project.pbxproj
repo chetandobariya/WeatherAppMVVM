@@ -156,8 +156,6 @@
 				1197DEE12C81021E000ECDA8 /* Scenes */,
 				1197DEE22C81022B000ECDA8 /* Service */,
 				1197DEDE2C810201000ECDA8 /* Resources */,
-				1197DEB72C810180000ECDA8 /* Assets.xcassets */,
-				1197DEF32C81048F000ECDA8 /* SplashScreen.storyboard */,
 				1197DEB92C810180000ECDA8 /* Preview Content */,
 			);
 			path = WeatherAppMVVM;
@@ -202,6 +200,8 @@
 		1197DEDE2C810201000ECDA8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				1197DEF32C81048F000ECDA8 /* SplashScreen.storyboard */,
+				1197DEB72C810180000ECDA8 /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
