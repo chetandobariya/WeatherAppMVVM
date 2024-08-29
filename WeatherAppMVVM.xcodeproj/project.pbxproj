@@ -33,6 +33,11 @@
 		1197DF102C8110DF000ECDA8 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1197DF0F2C8110DF000ECDA8 /* WeatherCell.swift */; };
 		1197DF152C811333000ECDA8 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1197DF122C811333000ECDA8 /* Date+Extension.swift */; };
 		1197DF162C811333000ECDA8 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1197DF132C811333000ECDA8 /* UIApplication+Extension.swift */; };
+		1197DF192C8115DD000ECDA8 /* WeatherDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1197DF182C8115DD000ECDA8 /* WeatherDataView.swift */; };
+		1197DF1B2C8115EE000ECDA8 /* HourlyForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1197DF1A2C8115EE000ECDA8 /* HourlyForecastView.swift */; };
+		1197DF1D2C8115FE000ECDA8 /* DailyForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1197DF1C2C8115FE000ECDA8 /* DailyForecastView.swift */; };
+		1197DF1F2C81165C000ECDA8 /* CustomStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1197DF1E2C81165C000ECDA8 /* CustomStackView.swift */; };
+		1197DF212C811680000ECDA8 /* CustomCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1197DF202C811680000ECDA8 /* CustomCorner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +87,11 @@
 		1197DF0F2C8110DF000ECDA8 /* WeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
 		1197DF122C811333000ECDA8 /* Date+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		1197DF132C811333000ECDA8 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		1197DF182C8115DD000ECDA8 /* WeatherDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataView.swift; sourceTree = "<group>"; };
+		1197DF1A2C8115EE000ECDA8 /* HourlyForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HourlyForecastView.swift; sourceTree = "<group>"; };
+		1197DF1C2C8115FE000ECDA8 /* DailyForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyForecastView.swift; sourceTree = "<group>"; };
+		1197DF1E2C81165C000ECDA8 /* CustomStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStackView.swift; sourceTree = "<group>"; };
+		1197DF202C811680000ECDA8 /* CustomCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCorner.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,6 +276,9 @@
 			isa = PBXGroup;
 			children = (
 				1197DF002C810CE8000ECDA8 /* WeatherDetailView.swift */,
+				1197DF182C8115DD000ECDA8 /* WeatherDataView.swift */,
+				1197DF1A2C8115EE000ECDA8 /* HourlyForecastView.swift */,
+				1197DF1C2C8115FE000ECDA8 /* DailyForecastView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -273,6 +286,7 @@
 		1197DF022C810D81000ECDA8 /* Layout */ = {
 			isa = PBXGroup;
 			children = (
+				1197DF202C811680000ECDA8 /* CustomCorner.swift */,
 			);
 			path = Layout;
 			sourceTree = "<group>";
@@ -280,6 +294,7 @@
 		1197DF032C810D8C000ECDA8 /* ViewComponents */ = {
 			isa = PBXGroup;
 			children = (
+				1197DF1E2C81165C000ECDA8 /* CustomStackView.swift */,
 			);
 			path = ViewComponents;
 			sourceTree = "<group>";
@@ -435,7 +450,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1197DF1B2C8115EE000ECDA8 /* HourlyForecastView.swift in Sources */,
+				1197DF212C811680000ECDA8 /* CustomCorner.swift in Sources */,
 				1197DEEE2C81037E000ECDA8 /* Weather.swift in Sources */,
+				1197DF192C8115DD000ECDA8 /* WeatherDataView.swift in Sources */,
 				1197DF0A2C810DB4000ECDA8 /* LocationManager.swift in Sources */,
 				1197DEFB2C810CA4000ECDA8 /* HomeView.swift in Sources */,
 				1197DF0D2C810DB4000ECDA8 /* ReachabilityHelper.swift in Sources */,
@@ -445,6 +463,7 @@
 				1197DEEC2C810372000ECDA8 /* WeatherAlert.swift in Sources */,
 				1197DF0E2C810DB4000ECDA8 /* ImageDownloader.swift in Sources */,
 				1197DEF62C8107B5000ECDA8 /* APIService.swift in Sources */,
+				1197DF1F2C81165C000ECDA8 /* CustomStackView.swift in Sources */,
 				1197DEE42C810320000ECDA8 /* Forecast.swift in Sources */,
 				1197DF102C8110DF000ECDA8 /* WeatherCell.swift in Sources */,
 				1197DF162C811333000ECDA8 /* UIApplication+Extension.swift in Sources */,
@@ -454,6 +473,7 @@
 				1197DEEA2C810366000ECDA8 /* DailyWeather.swift in Sources */,
 				1197DEE62C81033D000ECDA8 /* CurrentWeather.swift in Sources */,
 				1197DEE82C810350000ECDA8 /* HourlyWeather.swift in Sources */,
+				1197DF1D2C8115FE000ECDA8 /* DailyForecastView.swift in Sources */,
 				1197DEB42C81017E000ECDA8 /* WeatherAppMVVMApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
