@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sky" translatesAutoresizingMaskIntoConstraints="NO" id="Suo-65-9cY">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNC-fw-UG5">
+                                <rect key="frame" x="101" y="418" width="191" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="191" id="KeK-VH-y2f"/>
+                                    <constraint firstAttribute="height" constant="41" id="suU-CM-t8X"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zNC-fw-UG5" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="5ZY-4i-uxh"/>
+                            <constraint firstItem="zNC-fw-UG5" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="FDA-gQ-WnS"/>
+                            <constraint firstItem="Suo-65-9cY" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="WLn-vq-CBA"/>
+                            <constraint firstItem="Suo-65-9cY" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="alv-vY-wPC"/>
+                            <constraint firstItem="Suo-65-9cY" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="p4r-Ar-9dG"/>
+                            <constraint firstAttribute="bottom" secondItem="Suo-65-9cY" secondAttribute="bottom" id="rYA-CC-wTI"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.58778625954199" y="4.9295774647887329"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sky" width="1000" height="1500"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

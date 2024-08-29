@@ -21,6 +21,8 @@
 		1197DEEC2C810372000ECDA8 /* WeatherAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1197DEEB2C810372000ECDA8 /* WeatherAlert.swift */; };
 		1197DEEE2C81037E000ECDA8 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1197DEED2C81037E000ECDA8 /* Weather.swift */; };
 		1197DEF02C810387000ECDA8 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1197DEEF2C810387000ECDA8 /* City.swift */; };
+		1197DEF22C8103FF000ECDA8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1197DEF12C8103FF000ECDA8 /* Constants.swift */; };
+		1197DEF42C81048F000ECDA8 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1197DEF32C81048F000ECDA8 /* SplashScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		1197DEEB2C810372000ECDA8 /* WeatherAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAlert.swift; sourceTree = "<group>"; };
 		1197DEED2C81037E000ECDA8 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		1197DEEF2C810387000ECDA8 /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		1197DEF12C8103FF000ECDA8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1197DEF32C81048F000ECDA8 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SplashScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,8 +118,8 @@
 				1197DEDF2C81020D000ECDA8 /* Common */,
 				1197DEDE2C810201000ECDA8 /* Resources */,
 				1197DEDD2C8101EC000ECDA8 /* Application */,
-				1197DEB52C81017E000ECDA8 /* ContentView.swift */,
 				1197DEB72C810180000ECDA8 /* Assets.xcassets */,
+				1197DEF32C81048F000ECDA8 /* SplashScreen.storyboard */,
 				1197DEB92C810180000ECDA8 /* Preview Content */,
 			);
 			path = WeatherAppMVVM;
@@ -150,6 +154,8 @@
 			isa = PBXGroup;
 			children = (
 				1197DEB32C81017E000ECDA8 /* WeatherAppMVVMApp.swift */,
+				1197DEB52C81017E000ECDA8 /* ContentView.swift */,
+				1197DEF12C8103FF000ECDA8 /* Constants.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -301,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1197DEBB2C810180000ECDA8 /* Preview Assets.xcassets in Resources */,
+				1197DEF42C81048F000ECDA8 /* SplashScreen.storyboard in Resources */,
 				1197DEB82C810180000ECDA8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -331,6 +338,7 @@
 				1197DEF02C810387000ECDA8 /* City.swift in Sources */,
 				1197DEEC2C810372000ECDA8 /* WeatherAlert.swift in Sources */,
 				1197DEE42C810320000ECDA8 /* Forecast.swift in Sources */,
+				1197DEF22C8103FF000ECDA8 /* Constants.swift in Sources */,
 				1197DEEA2C810366000ECDA8 /* DailyWeather.swift in Sources */,
 				1197DEE62C81033D000ECDA8 /* CurrentWeather.swift in Sources */,
 				1197DEE82C810350000ECDA8 /* HourlyWeather.swift in Sources */,
@@ -504,6 +512,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = SplashScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -533,6 +542,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = SplashScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
